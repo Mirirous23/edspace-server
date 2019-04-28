@@ -1,0 +1,24 @@
+version: '3.1'
+
+services:
+
+  db:
+    image: mysql
+    container_name: edspace-db
+    restart: 'always'
+    environment:
+      MYSQL_DATABASE: edspace-db
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/edspace-server
+    ports:
+      - "8000:8000"
+    container_name: edspace-web
+    depends_on:
+      - db
