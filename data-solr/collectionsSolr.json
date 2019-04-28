@@ -1,0 +1,17 @@
+{
+  "responseHeader": {
+    "status": 400,
+    "QTime": 10,
+    "params": {
+      "indent": "true",
+      "q": "Model - Object data types\n\nHere are all of the data types, not all fields are necessary or supported when posting/putting content, but the output contains this information:\nCommunity Object\n",
+      "_": "1556305891380",
+      "qt": "{\"id\":730,\"name\":\"Annual Reports Collection\",\"handle\":\"10766/10214\",\"type\":\"collection\",\"link\":\"/rest/collections/730\",\"expand\":[\"parentCommunityList\",\"parentCommunity\",\"items\",\"license\",\"logo\",\"all\"],\"logo\":null,\"parentCommunity\":null,\"parentCommunityList\":[],\"items\":[],\"license\":null,\"copyrightText\":\"\",\"introductoryText\":\"\",\"shortDescription\":\"\",\"sidebarText\":\"\",\"numberItems\":3}",
+      "wt": "json"
+    }
+  },
+  "error": {
+    "msg": "undefined field information",
+    "code": 400
+  }
+}
