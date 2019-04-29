@@ -1,0 +1,8 @@
+{% extends 'admin/base.html' %}
+{% block content %}
+<form id="form"  method="get" action="report">
+    {% load staticfiles %}
+    <img src="{% static 'img/pie_chart_items.png' %}"/>
+    <input type="submit" value="Generar Gráfico">
+</form>
+{% endblock %}
